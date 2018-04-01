@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "523012761490",
+    "firebase_url": "https://maisha1202154340modul6.firebaseio.com",
+    "project_id": "maisha1202154340modul6",
+    "storage_bucket": "maisha1202154340modul6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523012761490:android:959e6c6eeca9d214",
+        "android_client_info": {
+          "package_name": "com.andro.maisha.maisha_1202154340_modul6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523012761490-86p0obuecod848d8gr4o5u1ighos8jfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andro.maisha.maisha_1202154340_modul6",
+            "certificate_hash": "8af6f6a053d583802e822dec9d10712b45a32d3e"
+          }
+        },
+        {
+          "client_id": "523012761490-14lkd3epd93hash3g6ik4a564lbjvk74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL44c39DwAzMUEWVKo9hh09P0sya1dUPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523012761490-14lkd3epd93hash3g6ik4a564lbjvk74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
