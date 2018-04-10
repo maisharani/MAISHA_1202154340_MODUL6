@@ -45,7 +45,7 @@ public class FragmentPostTerbaru extends Fragment {
         mProgressDialog.setMessage("Please wait....");
         mProgressDialog.show();
 
-        recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
         listPosts = new ArrayList<>();
 
@@ -61,7 +61,7 @@ public class FragmentPostTerbaru extends Fragment {
 
                 listPosts.clear();
 
-                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) { // kurang :
 
                     Post post = postSnapshot.getValue(Post.class);
 

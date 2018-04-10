@@ -37,11 +37,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
 
-            mUsername= itemView.findViewById(R.id.tv_username);
-            mTitlePost = itemView.findViewById(R.id.tv_title_post);
-            mPost = itemView.findViewById(R.id.tv_post);
-            mImagePost=itemView.findViewById(R.id.img_post);
-            cardViewPost= itemView.findViewById(R.id.cardViewPost);
+            mUsername= (TextView) itemView.findViewById(R.id.tv_username);
+            mTitlePost = (TextView) itemView.findViewById(R.id.tv_title_post);
+            mPost = (TextView) itemView.findViewById(R.id.tv_post);
+            mImagePost= (ImageView) itemView.findViewById(R.id.img_post);
+            cardViewPost= (CardView) itemView.findViewById(R.id.cardViewPost);
         }
     }
     @NonNull

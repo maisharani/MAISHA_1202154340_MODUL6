@@ -30,9 +30,9 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.ViewHold
         ImageView imageView;
         public ViewHolder(View itemView) {
             super(itemView);
-            imageView=itemView.findViewById(R.id.img_avatar);
-            mUsername=itemView.findViewById(R.id.tv_username);
-            mComment=itemView.findViewById(R.id.tv_comment);
+            imageView= (ImageView) itemView.findViewById(R.id.img_avatar);
+            mUsername= (TextView) itemView.findViewById(R.id.tv_username);
+            mComment= (TextView) itemView.findViewById(R.id.tv_comment);
         }
     }
 

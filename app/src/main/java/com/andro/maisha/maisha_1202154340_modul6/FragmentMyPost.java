@@ -35,7 +35,7 @@ public class FragmentMyPost extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_my_post, container, false);
 
-        recyclerView = view.findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
 
         FirebaseAuth mAuth = FirebaseAuth.getInstance();

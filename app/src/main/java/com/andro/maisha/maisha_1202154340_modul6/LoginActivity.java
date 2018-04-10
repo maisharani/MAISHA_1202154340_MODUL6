@@ -36,12 +36,12 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mEmail = findViewById(R.id.et_email);
-        mPassword = findViewById(R.id.et_password);
+        mEmail = (TextInputLayout) findViewById(R.id.et_email);
+        mPassword = (TextInputLayout) findViewById(R.id.et_password);
 
-        databaseUser = FirebaseDatabase.getInstance().getReference(MainActivity.table3);
+        databaseUser = FirebaseDatabase.getInstance().getReference(MainActivity.table3); // getInstance
 
-        mMasuk = findViewById(R.id.btn_masuk);
+        mMasuk = (Button) findViewById(R.id.btn_masuk);
         mMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,8 +57,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mDaftar = findViewById(R.id.btn_daftar);
-        mDaftar.setOnClickListener(new View.OnClickListener() {
+        mDaftar = (Button) findViewById(R.id.btn_daftar);
+        mDaftar.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 email = mEmail.getEditText().getText().toString();

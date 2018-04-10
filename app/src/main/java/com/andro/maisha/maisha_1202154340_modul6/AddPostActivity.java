@@ -63,9 +63,9 @@ public class AddPostActivity extends AppCompatActivity {
 
         mTitlePost = (EditText) findViewById(R.id.et_title_post);
         mPost = (EditText) findViewById(R.id.et_post);
-        imageView = findViewById(R.id.img_post);
+        imageView = (ImageView) findViewById(R.id.img_post);
 
-        mChooseImage = findViewById(R.id.btn_choose_image);
+        mChooseImage = (Button) findViewById(R.id.btn_choose_image);
         mChooseImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +90,7 @@ public class AddPostActivity extends AppCompatActivity {
                 final String postMessage = mPost.getText().toString();
                 final String id = databaseFood.push().getKey();
                 final String userId = mAuth.getUid();
+
 
                 if (imageUri != null && !TextUtils.isEmpty(name)) {
 

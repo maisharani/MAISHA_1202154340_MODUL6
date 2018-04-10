@@ -52,18 +52,18 @@ public class DetailPostActivity extends AppCompatActivity {
         databaseComments = FirebaseDatabase.getInstance().getReference(MainActivity.table2).child(id);
         databaseUser = FirebaseDatabase.getInstance().getReference(MainActivity.table3);
 
-        recyclerView = findViewById(R.id.recyclerViewComment);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewComment);
 
         listComments = new ArrayList<>();
 
-        mUsername = findViewById(R.id.tv_username);
-        mImagePost = findViewById(R.id.img_post);
-        mTitlePost = findViewById(R.id.tv_title_post);
-        mPost = findViewById(R.id.tv_post);
+        mUsername = (TextView) findViewById(R.id.tv_username);
+        mImagePost = (ImageView) findViewById(R.id.img_post);
+        mTitlePost = (TextView) findViewById(R.id.tv_title_post);
+        mPost = (TextView) findViewById(R.id.tv_post);
 
         Glide.with(DetailPostActivity.this).load(image).into(mImagePost);
 
-        et_comment = findViewById(R.id.et_comment);
+        et_comment = (EditText) findViewById(R.id.et_comment);
 
         mUsername.setText(username);
         mTitlePost.setText(mTitle);

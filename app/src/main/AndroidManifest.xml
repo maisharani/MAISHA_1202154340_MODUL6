@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Popotoan" />
+            android:label="FotoYuk" />
         <activity
             android:name=".LoginActivity"
             android:label="Sign In">
